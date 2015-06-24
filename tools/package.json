@@ -9,6 +9,7 @@
   "author": "Camillus Gerard Cai",
   "license": "MIT",
   "dependencies": {
-    "commander": "^2.8.1"
+    "commander": "^2.8.1",
+    "mac-randomize": "file:.."
   }
 }

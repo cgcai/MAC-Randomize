@@ -1,0 +1,19 @@
+{
+  "name": "mac-randomize",
+  "version": "0.0.1",
+  "description": "Utility functions to find an interface's MAC address, and generate and apply a random MAC address to an interface on OS X",
+  "main": "mac_randomize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgcai/MAC-Randomize.git"
+  },
+  "author": "Camillus Gerard Cai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cgcai/MAC-Randomize/issues"
+  },
+  "homepage": "https://github.com/cgcai/MAC-Randomize#readme"
+}

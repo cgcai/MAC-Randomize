@@ -1,0 +1,14 @@
+{
+  "name": "hwaddr_randomize",
+  "version": "0.0.1",
+  "description": "Randomizes MAC address of a network interface in OS X",
+  "main": "hwaddr_randomize",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Camillus Gerard Cai",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1"
+  }
+}

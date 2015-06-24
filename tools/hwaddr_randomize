@@ -1,0 +1,26 @@
+#! /usr/bin/env node
+
+var program = require("commander");
+var mac = require("../mac_randomize");
+
+program
+    .version("0.0.1")
+    .arguments("<interface>")
+    .action(function (intf) {
+        netInterface = intf;
+    });
+
+program.parse(process.argv);
+
+if (typeof netInterface === "undefined") {
+    console.error("No interface given!");
+    program.outputHelp();
+    process.exit(1);
+}
+
+var oldMAC = mac.findMAC(netInterface);
+console.log("Old MAC: " + oldMAC);
+
+var newMAC = mac.randomMAC();
+mac.applyMAC(netInterface, newMAC);
+console.log("New MAC: " + newMAC);
